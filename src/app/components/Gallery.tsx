@@ -2,11 +2,25 @@ import { ArtCardInGallery } from "./ArtCardInGallery"
 
 export const Gallery = () => {
   return (
-    <div className="flex flex-col w-screen px-28">  
-      <div>
-        <h2 className=''>Gallery</h2>
+    <div className="flex flex-col w-screen px-8">  
+      <div className='h-28 flex flex-col items-center'>
+        <h1 className="text-3xl py-8">Gallery</h1>
       </div>
-      <div className='h-1/3 w-full px-4 py-2 bg-cyan-200 flex flex-row  '>
+      <div className='h-full w-full py-2 flex flex-row overflow-x-scroll'>
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
+        <ArtCardInGallery />
         <ArtCardInGallery />
         <ArtCardInGallery />
       </div> 
