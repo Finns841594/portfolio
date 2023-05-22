@@ -1,4 +1,4 @@
-import { ArtCardInGallery } from "./ArtCardInGallery"
+import { WorkCardInGallery } from "./WorkCardInGallery"
 
 export const Gallery = () => {
   return (
@@ -7,22 +7,10 @@ export const Gallery = () => {
         <h1 className="text-3xl py-8">Gallery</h1>
       </div>
       <div className='h-full w-full py-2 flex flex-row overflow-x-scroll'>
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
-        <ArtCardInGallery />
+        <WorkCardInGallery />
+        <WorkCardInGallery />
+        <WorkCardInGallery />
+
       </div> 
     </div>
   )

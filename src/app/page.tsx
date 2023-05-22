@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { Gallery } from './components/Gallery'
-import { ArtHeader } from './components/ArtHeader'
+import { MyHeader } from './components/MyHeader'
+import { Intro } from './components/Intro'
 
 export default function Home() {
   return (
     <main className="w-screen h-screen flex flex-col items-center">
-      <ArtHeader />
-      <Gallery />
+      <MyHeader />
+      <Intro />
       <Gallery />
 
     </main>

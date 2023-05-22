@@ -12,6 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'rose-quartz': '#F7CAC9',
+        'serenity': '#92A8D1',
+      },
+      spacing: {
+        '112': '28rem',
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+        '192': '48rem',
+        '224': '56rem',
+        '256': '64rem',
+      }
     },
   },
   plugins: [],
