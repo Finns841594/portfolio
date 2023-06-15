@@ -1,4 +1,5 @@
 import { WorkCardInGallery } from "./WorkCardInGallery"
+import { Card } from '@nextui-org/react';
 
 export const Gallery = () => {
   return (
@@ -7,9 +8,11 @@ export const Gallery = () => {
         <h1 className="text-3xl py-8">Gallery</h1>
       </div>
       <div className='h-full w-full py-2 flex flex-row overflow-x-scroll'>
-        <WorkCardInGallery />
-        <WorkCardInGallery />
-        <WorkCardInGallery />
+        <Card>
+          <Card.Body>
+            <Card.Image src="/images/1.jpg" width={300} height={300} />
+          </Card.Body>
+        </Card>
 
       </div> 
     </div>
