@@ -10,7 +10,7 @@ export const Gallery = () => {
       <div className='h-full w-full py-2 flex flex-row overflow-x-scroll'>
         <Card>
           <Card.Body>
-            <Card.Image src="/images/1.jpg" width={300} height={300} />
+            <Card.Image src="/map expand.gif" height={600} />
           </Card.Body>
         </Card>
 
