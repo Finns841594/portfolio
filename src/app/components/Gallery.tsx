@@ -1,5 +1,5 @@
 import { WorkCardInGallery } from "./WorkCardInGallery"
-import { Card } from '@nextui-org/react';
+import { Card, CardBody } from '@nextui-org/react';
 
 export const Gallery = () => {
   return (
@@ -9,9 +9,12 @@ export const Gallery = () => {
       </div>
       <div className='h-full w-full py-2 flex flex-row overflow-x-scroll'>
         <Card>
-          <Card.Body>
+          {/* <Card.Body>
             <Card.Image src="/map expand.gif" height={600} />
-          </Card.Body>
+          </Card.Body> */}
+          <CardBody>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque qui repellendus, alias consequuntur illum sapiente ab deserunt error quis rerum dolore quia ipsum. Tempore libero labore minus atque accusamus nemo!</p>
+          </CardBody>
         </Card>
 
       </div> 
