@@ -1,14 +1,15 @@
 import React from "react";
 
-import {Card, CardHeader, CardBody, Image, CardFooter, Button } from "@nextui-org/react";
+import {Card, CardHeader, CardBody, Image, CardFooter, Button, Link } from "@nextui-org/react";
 import GithubIcon from "../icons/GithubIcon"
 
 export default function PortfolioCardBig() {
   return (
     <Card isBlurred className="py-4 border-none">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+      <CardHeader className="pb-0 pt-2 px-4 flex-row justify-between align-bottom ">
         <h4 className="font-bold text-large">Project Title</h4>
         {/* <small className="text-default-500">Project Subtitle</small> */}
+        <Link isBlock href="#" showAnchorIcon><small className="text-tiny">Visit App</small></Link>
       </CardHeader>
       <CardBody className="overflow-visible py-2">
         <Image
@@ -23,6 +24,7 @@ export default function PortfolioCardBig() {
         <Button color="primary" startContent={<GithubIcon/>} className="text-tiny" variant="bordered" radius="lg" size="sm">
           Github Repo
         </Button>
+        
       </CardFooter>
     </Card>
   );
