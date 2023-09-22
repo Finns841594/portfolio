@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { Gallery } from './components/Gallery'
 import { MyHeader } from './components/MyHeader'
 import { Intro } from './components/Intro'

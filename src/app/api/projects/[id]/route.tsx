@@ -5,5 +5,5 @@ export async function GET(request: NextApiRequest) {
   // get id from url
   const info = request.url;
 
-  return NextResponse.json({ message: `you are visiting art with id: ${info}` });
+  return NextResponse.json({ message: `you are visiting project with id: ${info}` });
 }
