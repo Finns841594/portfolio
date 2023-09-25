@@ -8,7 +8,7 @@ interface PortfolioCardBigProp {
   projectInfo: ProjectInfo,
 }
 
-const PortfolioCardBig = ({projectInfo} : PortfolioCardBigProp) => {
+const PortfolioCard = ({projectInfo} : PortfolioCardBigProp) => {
   return (
     <Card isBlurred className="py-4 border-none max-w-[400px]">
       <CardHeader className="pb-0 pt-2 px-4 flex-row justify-between align-bottom ">
@@ -50,4 +50,4 @@ const PortfolioCardBig = ({projectInfo} : PortfolioCardBigProp) => {
   );
 }
 
-export { PortfolioCardBig }
+export { PortfolioCard }

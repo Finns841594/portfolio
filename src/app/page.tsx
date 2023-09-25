@@ -10,8 +10,10 @@ export default function Home() {
     <main className="w-screen h-screen flex flex-col items-center">
       <NextUIProvider>
         <MyHeader />
-        <Intro />
-        <Gallery />
+        <div className='sm:max-w-7xl'>
+          <Intro />
+          <Gallery />
+        </div>
       </NextUIProvider>
     </main>
   )
