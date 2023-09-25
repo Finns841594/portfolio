@@ -26,11 +26,13 @@ const PortfolioCardBig = ({projectInfo} : PortfolioCardBigProp) => {
       </CardBody>
       <CardFooter className="flex flex-col justify-between">
         <div>
-          <Chip size="sm" radius="full" 
-          classNames={{
-            base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
-            content: "drop-shadow shadow-black text-white",
-          }}>Tech Stack</Chip>
+          {projectInfo.projectTechStacks && projectInfo.projectTechStacks.map((tech, index) => 
+            <Chip size="sm" radius="full" key={index} 
+            classNames={{
+              base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+              content: "drop-shadow shadow-black text-white",
+            }}>{tech}</Chip>
+          )}
         </div>
         <div>
           <p className="text-tiny">{projectInfo.projectDescription}</p>
