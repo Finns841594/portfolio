@@ -1,8 +1,11 @@
 import React from "react";
-
 import {Card, CardHeader, CardBody, Image, CardFooter, Button, Link, Chip } from "@nextui-org/react";
+
 import GithubIcon from "../icons/GithubIcon"
 import { ProjectInfo } from "../types/types"
+import { techStacksObjs } from "../data/techStacksObj";
+
+const techStacksObjsNameArray = techStacksObjs.map(item => item.stackName)
 
 interface PortfolioCardBigProp {
   projectInfo: ProjectInfo,
@@ -27,11 +30,16 @@ const PortfolioCard = ({projectInfo} : PortfolioCardBigProp) => {
       <CardFooter className="flex flex-col justify-between">
         <div>
           {projectInfo.projectTechStacks && projectInfo.projectTechStacks.map((tech, index) => 
-            <Chip size="sm" radius="full" key={index} 
-            classNames={{
-              base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
-              content: "drop-shadow shadow-black text-white",
-            }}>{tech}</Chip>
+            {if (!techStacksObjsNameArray.includes(tech)) {
+              return <Chip size="sm" radius="full" key={index}>{tech}</Chip> 
+            } else {
+              return <Chip size="sm" radius="full" key={index} 
+              classNames={{
+                base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+                content: "drop-shadow shadow-black text-white",
+              }}
+              >{tech}</Chip>
+            }}
           )}
         </div>
         <div>

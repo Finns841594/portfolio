@@ -1,4 +1,4 @@
-type TechStack = 'JavaScript' | 'Typescript' | 'C#' | 'React.js' | 'Express.js' 
+type TechStack = 'JavaScript' | 'Typescript' | 'C#' | 'React.js' | 'Express.js' | 'GoJS'
 
 export type ProjectInfo = {
   projectTitle: string,
@@ -7,4 +7,10 @@ export type ProjectInfo = {
   projectUrl?: string,
   projectGithubUrl?: string,
   projectTechStacks?: TechStack[],
+  featuredTechStacks?: TechStack[],
+}
+
+export type TechStackObj = {
+  stackName: TechStack,
+  stackOfficalLink: string,
 }

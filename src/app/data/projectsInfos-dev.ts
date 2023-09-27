@@ -7,7 +7,8 @@ export const projectsInfos: ProjectInfo[] = [
   projectImageName: 'moboga.gif',
   projectUrl: 'http://moboga.netlify.app',
   projectGithubUrl: 'https://github.com/Finns841594/moboga',
-  projectTechStacks: ['JavaScript', 'Typescript', 'Express.js'],
+  projectTechStacks: ['JavaScript', 'Typescript', 'Express.js', 'GoJS'],
+  featuredTechStacks: ['GoJS'],
   },
   {
   projectTitle: 'Moboga2',
