@@ -13,19 +13,26 @@ export const Intro = () => {
         />
       </div>
       <div className="md:col-span-2 flex flex-col">
-        <h1>Hi, I&apos;m Feng Yang </h1>
-        <h2>
-          I am feeling <TypingEffect words={['happy', 'joy', 'elated']} />{' '}
-          today!
-        </h2>
-        <h2>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          sequi laborum nemo quasi ratione sit odio excepturi quis tenetur
-          accusamus! Fugiat quisquam dolor modi mollitia. Praesentium
-          reprehenderit tenetur quam fuga repudiandae, ipsum tempora dolor quod
-          voluptatibus perferendis pariatur amet doloribus veritatis temporibus,
-          saepe, nulla inventore iusto velit. Perferendis, amet sapiente.
-        </h2>
+        <h4 className="text-3xl font-semibold">Hi! It&apos;s Feng here </h4>
+        <h3 className="text-5xl font-bold">
+          I am a{' '}
+          <TypingEffect
+            words={[
+              'Full Stack Developer',
+              'Architect',
+              'Real Estate Developer',
+              'Gamer',
+              'Reader',
+              'Graphic Designer',
+            ]}
+            speed={50}
+          />
+        </h3>
+        <p className="mt-4">
+          Full stack JavaScript/TypeScript developer, former architect and real
+          estate developer. Passionate in programming, gaming, reading and arts.
+          Have good eyes and minds for design. Prepared to embrace challenges.
+        </p>
       </div>
     </div>
   )

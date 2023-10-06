@@ -70,11 +70,11 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
             })}
         </div>
         <div>
-          <p className="text-tiny">
+          <div className="text-tiny">
             <ScrollShadow hideScrollBar className="w-[300px] h-[100px]">
               {projectInfo.projectDescription}
             </ScrollShadow>
-          </p>
+          </div>
         </div>
         <div>
           <Link href={projectInfo.projectGithubUrl} isExternal>

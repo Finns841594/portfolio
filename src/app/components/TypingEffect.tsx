@@ -5,11 +5,39 @@ interface Props {
   speed?: number
 }
 
+const colorList = [
+  'red',
+  'orange',
+  'amber',
+  // 'yellow',
+  // 'lime',
+  'green',
+  // 'emerald',
+  'teal',
+  // 'cyan',
+  'sky',
+  // 'blue',
+  'indigo',
+  'violet',
+  'purple',
+  'fuchsia',
+  'pink',
+  'rose',
+]
+
+const getColorClass = (color: string) => {
+  if (colorList.includes(color)) {
+    return `text-${color}-500`
+  }
+  return 'text-black' // default color if the provided color is not in the list
+}
+
 const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
   const [text, setText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const [typeSpeed, setTypeSpeed] = useState(speed)
+  const [color, setColor] = useState(colorList[0])
 
   useEffect(() => {
     const currentWord = words[wordIndex]
@@ -27,7 +55,11 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
       } else if (isDeleting && text === '') {
         setIsDeleting(false)
         setTypeSpeed(speed)
-        setWordIndex((prevWordIndex) => (prevWordIndex + 1) % words.length)
+        setWordIndex((prevWordIndex) => {
+          const newIndex = (prevWordIndex + 1) % words.length
+          setColor(colorList[newIndex]) // Update the color
+          return newIndex
+        })
       } else {
         setTypeSpeed(speed)
       }
@@ -37,7 +69,8 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
     return () => clearTimeout(timer)
   }, [text, isDeleting, wordIndex])
 
-  return <span>{text}</span>
+  // return <span className={getColorClass(color)}>{text}</span>
+  return <span style={{ color }}>{text}</span>
 }
 
 export default TypingEffect
