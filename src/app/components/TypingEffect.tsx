@@ -32,6 +32,15 @@ const getColorClass = (color: string) => {
   return 'text-black' // default color if the provided color is not in the list
 }
 
+const aOrAn = (word: string) => {
+  const aList = ['a', 'e', 'i', 'o', 'u']
+  if (aList.includes(word.toLowerCase()[0])) {
+    return 'an'
+  } else {
+    return 'a'
+  }
+}
+
 const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
   const [text, setText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
@@ -70,7 +79,12 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
   }, [text, isDeleting, wordIndex])
 
   // return <span className={getColorClass(color)}>{text}</span>
-  return <span style={{ color }}>{text}</span>
+  return (
+    <>
+      <span>{aOrAn(text)} </span>
+      <span style={{ color }}>{text}</span>
+    </>
+  )
 }
 
 export default TypingEffect
