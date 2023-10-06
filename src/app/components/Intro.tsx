@@ -4,7 +4,7 @@ import TypingEffect from './TypingEffect'
 export const Intro = () => {
   return (
     <div className="grid md:grid-cols-3 items-center gap-10 max-w-[1100px] mx-auto my-10 md:my-40 p-2">
-      <div className="col-span-1">
+      <div className="col-span-1 w-48 md:w-full grid mx-auto">
         <Image
           isBlurred
           alt="my profile"
@@ -12,7 +12,7 @@ export const Intro = () => {
           radius={'full'}
         />
       </div>
-      <div className="md:col-span-2 flex flex-col">
+      <div className="md:col-span-2 flex flex-col px-4">
         <h4 className="text-3xl font-semibold">Hi! It&apos;s Feng here </h4>
         <h3 className="text-5xl font-bold">
           I am{' '}
