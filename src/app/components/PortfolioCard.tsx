@@ -8,6 +8,7 @@ import {
   Button,
   Link,
   Chip,
+  ScrollShadow,
 } from '@nextui-org/react'
 
 import GithubIcon from '../icons/GithubIcon'
@@ -34,6 +35,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
       </CardHeader>
       <CardBody className="overflow-visible py-2">
         <Image
+          isZoomed
           alt="Project preview gif"
           className="object-cover rounded-xl"
           src={`/${projectInfo.projectImageName}`}
@@ -68,7 +70,11 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
             })}
         </div>
         <div>
-          <p className="text-tiny">{projectInfo.projectDescription}</p>
+          <p className="text-tiny">
+            <ScrollShadow hideScrollBar className="w-[300px] h-[100px]">
+              {projectInfo.projectDescription}
+            </ScrollShadow>
+          </p>
         </div>
         <div>
           <Link href={projectInfo.projectGithubUrl} isExternal>
