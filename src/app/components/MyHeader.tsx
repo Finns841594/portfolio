@@ -22,14 +22,14 @@ export const MyHeader = () => {
       ></NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="flex">
-          <LinkedinIcon fill="blue" />
           <Link isBlock href="#">
+            <LinkedinIcon fill="blue" className="mr-2" />
             Linkedin
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <GithubIcon fill="primary" />
           <Link isBlock href="#">
+            <GithubIcon fill="primary" className="mr-2" />
             Github
           </Link>
         </NavbarItem>

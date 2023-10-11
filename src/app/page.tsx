@@ -4,6 +4,7 @@ import { Gallery } from './components/Gallery'
 import { MyHeader } from './components/MyHeader'
 import { Intro } from './components/Intro'
 import { NextUIProvider } from '@nextui-org/react'
+import { Footer } from './components/Footer'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <MyHeader />
         <Intro />
         <Gallery />
+        <Footer />
       </NextUIProvider>
     </main>
   )
