@@ -1,6 +1,7 @@
 import { PortfolioCard } from './PortfolioCard'
 
 import { projectsInfos } from '../data/projectsInfos-dev'
+// import { projectsInfos } from '../data/projectsInfos'
 
 export const Gallery = () => {
   return (

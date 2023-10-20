@@ -41,9 +41,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
           src={`/${projectInfo.projectImageName}`}
           width={370}
         />
-      </CardBody>
-      <CardFooter className="flex flex-col justify-between">
-        <div>
+        <div className="my-1">
           {projectInfo.projectTechStacks &&
             projectInfo.projectTechStacks.map((tech, index) => {
               if (!techStacksObjsNameArray.includes(tech)) {
@@ -69,6 +67,8 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
               }
             })}
         </div>
+      </CardBody>
+      <CardFooter className="flex flex-col justify-between -mt-4">
         <div>
           <div className="text-tiny">
             <ScrollShadow hideScrollBar className="w-[300px] h-[100px]">
