@@ -5,17 +5,11 @@ import {
   CardBody,
   Image,
   CardFooter,
-  Button,
   Link,
-  Chip,
   ScrollShadow,
 } from '@nextui-org/react'
-
-import GithubIcon from '../icons/GithubIcon'
 import { ProjectInfo } from '../types/types'
-import { techStacksObjs } from '../data/techStacksObj'
-
-const techStacksObjsNameArray = techStacksObjs.map((item) => item.stackName)
+import TechStacks from './TechStacks'
 
 interface PortfolioCardBigProp {
   projectInfo: ProjectInfo
@@ -23,72 +17,49 @@ interface PortfolioCardBigProp {
 
 const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
   return (
-    <Card isBlurred className="py-4 border-none max-w-[400px]">
-      <CardHeader className="pb-0 pt-2 px-4 flex-row justify-between align-bottom ">
-        <h4 className="font-bold text-large">{projectInfo.projectTitle}</h4>
-        {/* <small className="text-default-500">Project Subtitle</small> */}
-        {projectInfo.projectUrl && (
-          <Link isBlock href={projectInfo.projectUrl} isExternal showAnchorIcon>
-            <small className="text-tiny">Visit App</small>
-          </Link>
-        )}
+    <Card isBlurred className="p-3 max-w-[400px]">
+      <CardHeader className="pb-0 flex-col items-start">
+        <h2 className="font-bold text-large">{projectInfo.projectTitle}</h2>
+        <small className="text-default-500">Project Subtitle</small>
       </CardHeader>
-      <CardBody className="overflow-visible py-2">
-        <Image
-          isZoomed
-          alt="Project preview gif"
-          className="object-cover rounded-xl"
-          src={`/${projectInfo.projectImageName}`}
-          width={370}
-        />
-        <div className="my-1">
-          {projectInfo.projectTechStacks &&
-            projectInfo.projectTechStacks.map((tech, index) => {
-              if (!techStacksObjsNameArray.includes(tech)) {
-                return (
-                  <Chip size="sm" radius="full" key={index}>
-                    {tech}
-                  </Chip>
-                )
-              } else {
-                return (
-                  <Chip
-                    size="sm"
-                    radius="full"
-                    key={index}
-                    classNames={{
-                      base: 'bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30',
-                      content: 'drop-shadow shadow-black text-white',
-                    }}
-                  >
-                    {tech}
-                  </Chip>
-                )
-              }
-            })}
+      <CardBody className="flex gap-2">
+        <div className="w-full h-[180px] flex items-center">
+          <Image
+            // isZoomed
+            alt="Project preview gif"
+            className="object-cover rounded-xl"
+            src={`${projectInfo.projectImageLink}`}
+            width={370}
+            height={180}
+          />
+        </div>
+        <TechStacks projectInfo={projectInfo} />
+        <div className="text-tiny">
+          <ScrollShadow hideScrollBar className="max-w-[300px] h-[100px]">
+            {projectInfo.projectDescription}
+          </ScrollShadow>
         </div>
       </CardBody>
-      <CardFooter className="flex flex-col justify-between -mt-4">
-        <div>
-          <div className="text-tiny">
-            <ScrollShadow hideScrollBar className="w-[300px] h-[100px]">
-              {projectInfo.projectDescription}
-            </ScrollShadow>
-          </div>
-        </div>
-        <div>
-          <Link href={projectInfo.projectGithubUrl} isExternal>
-            <Button
-              color="primary"
-              startContent={<GithubIcon />}
-              className="text-tiny"
-              variant="bordered"
-              radius="lg"
-              size="sm"
-            >
-              Github Repo
-            </Button>
+      <CardFooter>
+        <div className="flex justify-between align-bottom">
+          <Link
+            isBlock
+            href={projectInfo.projectGithubUrl}
+            isExternal
+            showAnchorIcon
+          >
+            <small className="text-tiny">Github Repo</small>
           </Link>
+          {projectInfo.projectUrl && (
+            <Link
+              isBlock
+              href={projectInfo.projectUrl}
+              isExternal
+              showAnchorIcon
+            >
+              <small className="text-tiny">Visit App</small>
+            </Link>
+          )}
         </div>
       </CardFooter>
     </Card>
