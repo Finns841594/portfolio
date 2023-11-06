@@ -8,7 +8,7 @@ export const projectsInfos: ProjectInfo[] = [
     projectImageLink: '/moboga.gif',
     projectUrl: 'http://moboga.netlify.app',
     projectGithubUrl: 'https://github.com/Finns841594/moboga',
-    projectTechStacks: ['TypeScript', 'Express.js', 'GoJS'],
+    projectTechStacks: ['TypeScript', 'React', 'Express.js', 'GoJS'],
     featuredTechStacks: ['GoJS'],
   },
   {
@@ -19,7 +19,15 @@ export const projectsInfos: ProjectInfo[] = [
       'https://github.com/lups-tech/.github/raw/main/jobtech.gif',
     projectUrl: 'https://job-matches.vercel.app/',
     projectGithubUrl: 'https://github.com/lups-tech',
-    projectTechStacks: ['TypeScript', '.NET', 'TailwindCSS', 'React', 'Vite'],
+    projectTechStacks: [
+      'TypeScript',
+      'React',
+      'Vite',
+      '.NET',
+      'TailwindCSS',
+      'MUI',
+      'Auth0',
+    ],
     featuredTechStacks: ['TypeScript'],
   },
   {

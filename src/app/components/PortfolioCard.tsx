@@ -20,17 +20,18 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
     <Card isBlurred className="p-3 max-w-[400px]">
       <CardHeader className="pb-0 flex-col items-start">
         <h2 className="font-bold text-large">{projectInfo.projectTitle}</h2>
-        <small className="text-default-500">Project Subtitle</small>
+        {/* {projectInfo.projectSubDescription && (
+          <small className="text-default-500">Project Subtitle</small>
+        )} */}
       </CardHeader>
       <CardBody className="flex gap-2">
-        <div className="w-full h-[180px] flex items-center">
+        <div className="w-full h-[180px] flex items-center overflow-hidden rounded-lg">
           <Image
             // isZoomed
             alt="Project preview gif"
             className="object-cover rounded-xl"
             src={`${projectInfo.projectImageLink}`}
             width={370}
-            height={180}
           />
         </div>
         <TechStacks projectInfo={projectInfo} />
