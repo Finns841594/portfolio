@@ -9,7 +9,7 @@ interface TechStacksProps {
 const TechStacks = ({ projectInfo }: TechStacksProps) => {
   return (
     <div>
-      <ScrollShadow hideScrollBar className="max-w-[370px] flex gap-1">
+      <ScrollShadow hideScrollBar className="flex gap-1">
         {projectInfo.projectTechStacks &&
           projectInfo.projectTechStacks.map((tech, index) => {
             if (!projectInfo.featuredTechStacks.includes(tech)) {

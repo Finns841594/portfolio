@@ -51,7 +51,9 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
               width={370}
             />
           </div>
-          <TechStacks projectInfo={projectInfo} />
+          <div className="max-w-[370px]">
+            <TechStacks projectInfo={projectInfo} />
+          </div>
           <div className="text-tiny">
             <ScrollShadow hideScrollBar className="max-w-[300px] h-[100px]">
               {projectInfo.projectDescription}
@@ -85,29 +87,40 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} size={'4xl'}>
         <ModalContent>
           {(onClose) => (
-            <>
+            <div>
               <ModalHeader className="flex flex-col gap-1">
-                {projectInfo.projectTitle}
+                <p>{projectInfo.projectTitle}</p>
+                <small className="text-default-500">
+                  {projectInfo.projectSubDescription}
+                </small>
               </ModalHeader>
-              <ModalBody>
+              <ModalBody className="flex flex-col gap-2">
                 <p>{projectInfo.projectDescription}</p>
                 <Image
-                  // isZoomed
                   alt="Project preview gif"
                   className="object-cover rounded-xl"
                   src={`${projectInfo.projectImageLink}`}
-                  width={370}
                 />
+                <div className="max-w-[900px]">
+                  <TechStacks projectInfo={projectInfo} />
+                </div>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
+                <Link href={projectInfo.projectUrl} isExternal>
+                  <Button color="primary" onPress={onClose}>
+                    Visit App
+                  </Button>
+                </Link>
+                <Link href={projectInfo.projectGithubUrl} isExternal>
+                  <Button color="primary" onPress={onClose}>
+                    Check Code
+                  </Button>
+                </Link>
               </ModalFooter>
-            </>
+            </div>
           )}
         </ModalContent>
       </Modal>
