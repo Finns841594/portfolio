@@ -6,6 +6,7 @@ export const projectsInfos: ProjectInfo[] = [
     projectDescription:
       "MoboGa is a platform that showcases the interconnectedness between movies, books, and game adaptations of stories for fans. Here, you can delve into alternate dimensions of your favorite stories. For instance, if you're an avid reader and viewer of the Harry Potter series, you may also enjoy exploring the world of Harry Potter video games.",
     projectImageLink: '/moboga.gif',
+    projectSubDescription: 'MOvies, BOoks and GAmes',
     projectUrl: 'http://moboga.netlify.app',
     projectGithubUrl: 'https://github.com/Finns841594/moboga',
     projectTechStacks: ['TypeScript', 'React', 'Express.js', 'GoJS'],
@@ -27,6 +28,7 @@ export const projectsInfos: ProjectInfo[] = [
       'TailwindCSS',
       'MUI',
       'Auth0',
+      'Supabase',
     ],
     featuredTechStacks: ['TypeScript'],
   },
@@ -48,13 +50,7 @@ export const projectsInfos: ProjectInfo[] = [
       'https://github.com/Finns841594/intTest/raw/master/public/manual/Add_a_product.gif',
     projectUrl: 'threejs-ubi.vercel.app',
     projectGithubUrl: 'https://github.com/Finns841594/intTest',
-    projectTechStacks: [
-      'TypeScript',
-      'Three.js',
-      'React',
-      'React-three-fiber',
-      'Drei',
-    ],
+    projectTechStacks: ['TypeScript', 'Three.js', 'React', 'React-three-fiber'],
     featuredTechStacks: ['Three.js', 'React-three-fiber'],
   },
 ]

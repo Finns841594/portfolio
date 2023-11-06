@@ -7,25 +7,34 @@ import {
   CardFooter,
   Link,
   ScrollShadow,
+  Button,
 } from '@nextui-org/react'
 import { ProjectInfo } from '../types/types'
 import TechStacks from './TechStacks'
 
 interface PortfolioCardBigProp {
   projectInfo: ProjectInfo
+  onOpen: () => void
 }
 
-const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
+const PortfolioCard = ({ projectInfo, onOpen }: PortfolioCardBigProp) => {
   return (
     <Card isBlurred className="p-3 max-w-[400px]">
-      <CardHeader className="pb-0 flex-col items-start">
-        <h2 className="font-bold text-large">{projectInfo.projectTitle}</h2>
-        {/* {projectInfo.projectSubDescription && (
-          <small className="text-default-500">Project Subtitle</small>
-        )} */}
+      <CardHeader className="pb-0 flex flex-row justify-between items-start">
+        <div>
+          <h2 className="font-bold text-large">{projectInfo.projectTitle}</h2>
+          {projectInfo.projectSubDescription && (
+            <small className="text-default-500">
+              {projectInfo.projectSubDescription}
+            </small>
+          )}
+        </div>
+        <Button onPress={onOpen} variant="ghost" color="primary">
+          More Info
+        </Button>
       </CardHeader>
       <CardBody className="flex gap-2">
-        <div className="w-full h-[180px] flex items-center overflow-hidden rounded-lg">
+        <div className="w-full h-[180px] flex items-center overflow-hidden rounded-xl">
           <Image
             // isZoomed
             alt="Project preview gif"
