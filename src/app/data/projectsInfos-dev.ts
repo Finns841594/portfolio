@@ -5,41 +5,40 @@ export const projectsInfos: ProjectInfo[] = [
     projectTitle: 'Moboga',
     projectDescription:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
-    projectImageName: 'moboga.gif',
+    projectImageLink: 'moboga.gif',
     projectUrl: 'http://moboga.netlify.app',
     projectGithubUrl: 'https://github.com/Finns841594/moboga',
     projectTechStacks: ['JavaScript', 'Typescript', 'Express.js', 'GoJS'],
     featuredTechStacks: ['GoJS'],
   },
   {
-    projectTitle: 'Moboga2',
+    projectTitle: 'Moboga',
     projectDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
-    projectImageName: 'moboga.gif',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
+    projectImageLink: 'moboga.gif',
+    projectUrl: 'http://moboga.netlify.app',
     projectGithubUrl: 'https://github.com/Finns841594/moboga',
+    projectTechStacks: ['JavaScript', 'Typescript', 'Express.js', 'GoJS'],
+    featuredTechStacks: ['GoJS'],
   },
   {
     projectTitle: 'Moboga',
     projectDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
-    projectImageName: 'moboga.gif',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
+    projectImageLink: 'moboga.gif',
     projectUrl: 'http://moboga.netlify.app',
     projectGithubUrl: 'https://github.com/Finns841594/moboga',
+    projectTechStacks: ['JavaScript', 'Typescript', 'Express.js', 'GoJS'],
+    featuredTechStacks: ['GoJS'],
   },
   {
     projectTitle: 'Moboga',
     projectDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
-    projectImageName: 'moboga.gif',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
+    projectImageLink: 'moboga.gif',
     projectUrl: 'http://moboga.netlify.app',
     projectGithubUrl: 'https://github.com/Finns841594/moboga',
-  },
-  {
-    projectTitle: 'Moboga',
-    projectDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam doloremque recusandae voluptates deserunt amet debitis ea praesentium eum reprehenderit quia accusamus repellat ipsam pariatur distinctio, a dolores suscipit voluptatum!',
-    projectImageName: 'moboga.gif',
-    projectUrl: 'http://moboga.netlify.app',
-    projectGithubUrl: 'https://github.com/Finns841594/moboga',
+    projectTechStacks: ['JavaScript', 'Typescript', 'Express.js', 'GoJS'],
+    featuredTechStacks: ['GoJS'],
   },
 ]
