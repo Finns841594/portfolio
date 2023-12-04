@@ -1,15 +1,6 @@
 import { PortfolioCard } from './PortfolioCard'
-// import { projectsInfos } from '../data/projectsInfos-dev'
 import { projectsInfos } from '../data/projectsInfos'
-import {
-  Button,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  useDisclosure,
-} from '@nextui-org/react'
+import { useDisclosure } from '@nextui-org/react'
 
 export const Gallery = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()

@@ -62,14 +62,16 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
         </CardBody>
         <CardFooter>
           <div className="flex justify-between align-bottom">
-            <Link
-              isBlock
-              href={projectInfo.projectGithubUrl}
-              isExternal
-              showAnchorIcon
-            >
-              <small className="text-tiny">Github Repo</small>
-            </Link>
+            {projectInfo.projectGithubUrl && (
+              <Link
+                isBlock
+                href={projectInfo.projectGithubUrl}
+                isExternal
+                showAnchorIcon
+              >
+                <small className="text-tiny">Github Repo</small>
+              </Link>
+            )}
             {projectInfo.projectUrl && (
               <Link
                 isBlock
@@ -78,6 +80,26 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
                 showAnchorIcon
               >
                 <small className="text-tiny">Visit App</small>
+              </Link>
+            )}
+            {projectInfo.clientUrl && (
+              <Link
+                isBlock
+                href={projectInfo.clientUrl}
+                isExternal
+                showAnchorIcon
+              >
+                <small className="text-tiny">Client Website</small>
+              </Link>
+            )}
+            {projectInfo.clientProjectInfo && (
+              <Link
+                isBlock
+                href={projectInfo.clientProjectInfo}
+                isExternal
+                showAnchorIcon
+              >
+                <small className="text-tiny">Extra Info</small>
               </Link>
             )}
           </div>

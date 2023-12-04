@@ -17,6 +17,8 @@ export type ProjectInfo = {
   projectImageLink: string
   projectUrl?: string
   projectGithubUrl?: string
+  clientUrl?: string
+  clientProjectInfo?: string
   projectTechStacks: string[]
   featuredTechStacks: string[]
 }
