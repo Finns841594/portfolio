@@ -2,7 +2,7 @@ import { ProjectInfo } from '../types/types'
 
 export const clientProjectsInfos: ProjectInfo[] = [
   {
-    projectTitle: 'Furnity',
+    projectTitle: 'CP - Furnity',
     projectDescription:
       'crafting a 3D model of an adjustable room as a foundation to the product for users to test out how furnitures fit out their own apartment',
     projectImageLink: '/furnity.gif',
@@ -12,5 +12,15 @@ export const clientProjectsInfos: ProjectInfo[] = [
       'https://www.linkedin.com/posts/feng-yang-511361166_last-week-feng-yang-luca-martinelli-and-activity-7102212278644559872-xTjH?utm_source=share&utm_medium=member_desktop',
     projectTechStacks: ['TypeScript', 'Three.js', 'React', 'React-three-fiber'],
     featuredTechStacks: ['Three.js', 'React-three-fiber'],
+  },
+  {
+    projectTitle: 'CP - Vakansa',
+    projectDescription: '',
+    projectImageLink: '',
+    projectSubDescription: 'Build a dynamic calendar component',
+    clientUrl: 'https://www.furnity.se/',
+    clientProjectInfo: '',
+    projectTechStacks: ['JavaScript', 'React', 'MUI'],
+    featuredTechStacks: ['MUI'],
   },
 ]
