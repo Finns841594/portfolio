@@ -1,5 +1,7 @@
 import { ProjectInfo } from '../types/types'
 
+// should change gif to video for better performance.
+// should try Cloudinary for CDN
 export const projectsInfos: ProjectInfo[] = [
   {
     projectTitle: 'Moboga',
