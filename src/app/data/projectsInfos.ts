@@ -40,7 +40,7 @@ export const projectsInfos: ProjectInfo[] = [
       'This app can help you record your costs in different currencies(as many as you want!). And you can specify one main currency, so all the costs will be summed up into nominated currency by the exchange rates of that day.',
     projectImageLink:
       'https://github.com/Finns841594/Currency/raw/master/images/bookkeeping.png',
-    projectUrl: 'currencyappf.azurewebsites.net',
+    projectUrl: 'https://currencyappf.azurewebsites.net',
     projectGithubUrl: 'https://github.com/Finns841594/Currency',
     projectTechStacks: ['Python', 'Flask', 'PostgreSQL'],
     featuredTechStacks: ['Flask'],
@@ -50,7 +50,7 @@ export const projectsInfos: ProjectInfo[] = [
     projectDescription: 'Test placing a product in 3D environment',
     projectImageLink:
       'https://github.com/Finns841594/intTest/raw/master/public/manual/Add_a_product.gif',
-    projectUrl: 'threejs-ubi.vercel.app',
+    projectUrl: 'https://threejs-ubi.vercel.app',
     projectGithubUrl: 'https://github.com/Finns841594/intTest',
     projectTechStacks: ['TypeScript', 'Three.js', 'React', 'React-three-fiber'],
     featuredTechStacks: ['Three.js', 'React-three-fiber'],
