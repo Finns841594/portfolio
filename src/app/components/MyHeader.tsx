@@ -10,6 +10,7 @@ import GithubIcon from '../icons/GithubIcon'
 import LinkedinIcon from '../icons/LinkedinIcon'
 
 export const MyHeader = () => {
+  // const { theme, setTheme } = useTheme()
   return (
     <Navbar maxWidth={`2xl`}>
       <NavbarBrand>
@@ -21,15 +22,20 @@ export const MyHeader = () => {
         justify="center"
       ></NavbarContent>
       <NavbarContent justify="end">
+        {/* <NavbarItem>
+          <Button isIconOnly aria-label="darkmode switcher">
+            <MoonIcon onClick={() => setTheme('light')} />
+          </Button>
+        </NavbarItem> */}
         <NavbarItem className="flex">
           <Link isBlock href="#">
-            <LinkedinIcon fill="blue" className="mr-2" />
+            <LinkedinIcon className="mr-2" />
             Linkedin
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
           <Link isBlock href="#">
-            <GithubIcon fill="primary" className="mr-2" />
+            <GithubIcon className="mr-2" />
             Github
           </Link>
         </NavbarItem>
