@@ -14,7 +14,7 @@ export const Intro = () => {
       </div>
       <div className="md:col-span-2 flex flex-col px-4">
         <h4 className="text-3xl font-semibold">Hi! It&apos;s Feng here </h4>
-        <h3 className="text-5xl font-bold">
+        <h3 className="text-5xl font-bold h-36 sm:h-auto">
           I am{' '}
           <TypingEffect
             words={[
