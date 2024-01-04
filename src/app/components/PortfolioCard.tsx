@@ -95,10 +95,10 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
                 <small className="text-tiny">Client Website</small>
               </Link>
             )}
-            {projectInfo.clientProjectInfo && (
+            {projectInfo.clientProjectInfoLink && (
               <Link
                 isBlock
-                href={projectInfo.clientProjectInfo}
+                href={projectInfo.clientProjectInfoLink}
                 isExternal
                 showAnchorIcon
               >
