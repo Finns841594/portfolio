@@ -19,8 +19,8 @@ export const Intro = () => {
           <TypingEffect
             words={[
               'Full Stack Developer',
-              'Architect',
-              'Real Estate Developer',
+              'Former Architect',
+              'Former Real Estate Developer',
               'Gamer',
               'Reader',
               'Graphic Designer',

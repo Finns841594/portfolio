@@ -29,7 +29,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
     <div>
       <Card
         isBlurred
-        className="p-3 max-w-[400px] dark:border-2 dark:border-blue-700 "
+        className="p-3 max-w-[400px] dark:border-2 dark:border-primary "
       >
         <CardHeader className="pb-0 flex flex-row justify-between items-start">
           <div>

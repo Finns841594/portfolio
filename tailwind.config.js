@@ -25,7 +25,24 @@ module.exports = {
         224: '56rem',
         256: '64rem',
       },
+      // colors: {
+      //   primary: '#BEF264',
+      // },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        dark: {
+          colors: {
+            primary: {
+              DEFAULT: '#BEF264',
+              foreground: '#000000',
+            },
+            focus: '#BEF264',
+          },
+        },
+      },
+    }),
+  ],
 }
