@@ -59,7 +59,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
           </div>
           <div className="text-tiny">
             <ScrollShadow hideScrollBar className="max-w-[300px] h-[100px]">
-              {projectInfo.projectDescription}
+              <p>{projectInfo.projectDescription}</p>
             </ScrollShadow>
           </div>
         </CardBody>
@@ -109,7 +109,12 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
         </CardFooter>
       </Card>
 
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size={'4xl'}>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        size={'4xl'}
+        placement="top"
+      >
         <ModalContent>
           {(onClose) => (
             <div>
