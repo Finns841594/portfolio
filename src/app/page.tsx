@@ -1,12 +1,15 @@
 'use client'
 
-import { Gallery } from './components/Gallery'
-import { MyHeader } from './components/MyHeader'
-import { Intro } from './components/Intro'
-import { NextUIProvider } from '@nextui-org/react'
-import { Footer } from './components/Footer'
+import {
+  Gallery,
+  MyHeader,
+  Intro,
+  Footer,
+  ClientProjectsGallery,
+  AboutMe,
+} from './components'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
-import ClientProjectsGallery from './components/ClientProjectsGallery'
+import { NextUIProvider } from '@nextui-org/react'
 
 export default function Home() {
   return (
@@ -17,6 +20,7 @@ export default function Home() {
           <Intro />
           <Gallery />
           <ClientProjectsGallery />
+          <AboutMe />
           <Footer />
         </NextThemesProvider>
       </NextUIProvider>

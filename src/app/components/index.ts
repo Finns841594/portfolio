@@ -1,0 +1,6 @@
+export { MyHeader } from './MyHeader'
+export { Intro } from './Intro'
+export { Gallery } from './Gallery'
+export { ClientProjectsGallery } from './ClientProjectsGallery'
+export { AboutMe } from './AboutMe'
+export { Footer } from './Footer'
