@@ -25,6 +25,9 @@ interface PortfolioCardBigProp {
 const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
+  // Parse paragraph
+  const paragraphs = projectInfo.projectDescription.split('\n').filter((p) => p)
+
   return (
     <div>
       <Card
@@ -59,7 +62,9 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
           </div>
           <div className="text-tiny">
             <ScrollShadow hideScrollBar className="max-w-[300px] h-[100px]">
-              <p>{projectInfo.projectDescription}</p>
+              {paragraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </ScrollShadow>
           </div>
         </CardBody>
