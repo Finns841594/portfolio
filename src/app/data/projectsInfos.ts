@@ -32,7 +32,7 @@ export const projectsInfos: ProjectInfo[] = [
       'Auth0',
       'Supabase',
     ],
-    featuredTechStacks: ['TypeScript'],
+    featuredTechStacks: ['TypeScript', '.NET'],
   },
   {
     projectTitle: 'Multi-Currency Accounting',
