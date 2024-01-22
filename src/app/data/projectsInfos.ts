@@ -55,4 +55,14 @@ export const projectsInfos: ProjectInfo[] = [
     projectTechStacks: ['TypeScript', 'Three.js', 'React', 'React-three-fiber'],
     featuredTechStacks: ['Three.js', 'React-three-fiber'],
   },
+  {
+    projectTitle: 'Scorecard',
+    projectDescription:
+      'A card that helps employers meet perfect developer. Developed for internal use for instructors and sales to communicate on abilities and diversities a developer has. Woring in progress.',
+    projectImageLink: '/scorecard.gif',
+    projectUrl: 'https://salt-score-card.vercel.app/',
+    projectGithubUrl: 'https://github.com/salt-community/scorecard',
+    projectTechStacks: ['TypeScript', 'React', 'NextUi'],
+    featuredTechStacks: ['NextUi'],
+  },
 ]

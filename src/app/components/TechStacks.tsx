@@ -14,7 +14,7 @@ const TechStacks = ({ projectInfo }: TechStacksProps) => {
           projectInfo.projectTechStacks.map((tech, index) => {
             if (!projectInfo.featuredTechStacks.includes(tech)) {
               return (
-                <Chip size="sm" radius="full" key={index}>
+                <Chip size="sm" radius="full" variant="bordered" key={index}>
                   {tech}
                 </Chip>
               )
