@@ -62,7 +62,7 @@ export const projectsInfos: ProjectInfo[] = [
     projectImageLink: '/scorecard.gif',
     projectUrl: 'https://salt-score-card.vercel.app/',
     projectGithubUrl: 'https://github.com/salt-community/scorecard',
-    projectTechStacks: ['TypeScript', 'React', 'NextUi'],
-    featuredTechStacks: ['NextUi'],
+    projectTechStacks: ['TypeScript', 'React', 'Next.js', 'NextUI'],
+    featuredTechStacks: ['Next.js', 'NextUI'],
   },
 ]
