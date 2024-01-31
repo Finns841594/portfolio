@@ -65,4 +65,23 @@ export const projectsInfos: ProjectInfo[] = [
     projectTechStacks: ['TypeScript', 'React', 'Next.js', 'NextUI'],
     featuredTechStacks: ['Next.js', 'NextUI'],
   },
+  {
+    projectTitle: 'Milk Shop',
+    projectDescription:
+      'A project to practice React skills. Implemented Redux for managing the states. Backend has full unit-test test set. One of the many practicing project in PGP',
+    projectImageLink:
+      'https://github.com/Finns841594/pgp-five-milk-app/blob/master/public/screenshot%20home.png?raw=true',
+    projectUrl: '',
+    projectGithubUrl: 'https://github.com/Finns841594/pgp-five-milk-app',
+    projectTechStacks: [
+      'TDD',
+      'Redux',
+      'TypeScript',
+      'React',
+      'Next.js',
+      'NextUI',
+      'Node.js',
+    ],
+    featuredTechStacks: ['TDD', 'Redux', 'Node.js'],
+  },
 ]

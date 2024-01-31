@@ -14,6 +14,7 @@ import {
   ModalContent,
   ModalHeader,
   useDisclosure,
+  Divider,
 } from '@nextui-org/react'
 import { ProjectInfo } from '../types/types'
 import TechStacks from './TechStacks'
@@ -124,12 +125,13 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
           {(onClose) => (
             <div>
               <ModalHeader className="flex flex-col gap-1">
-                <p>{projectInfo.projectTitle}</p>
+                <p className="text-xl">{projectInfo.projectTitle}</p>
                 <small className="text-default-500">
                   {projectInfo.projectSubDescription}
                 </small>
+                <Divider />
               </ModalHeader>
-              <ModalBody className="flex flex-col gap-2">
+              <ModalBody className="flex flex-col gap-6 px-8">
                 <p>{projectInfo.projectDescription}</p>
                 <Image
                   alt="Project preview gif"
