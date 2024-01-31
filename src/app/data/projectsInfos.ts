@@ -60,8 +60,8 @@ export const projectsInfos: ProjectInfo[] = [
     projectDescription:
       'A card that helps employers meet perfect developer. Developed for internal use for instructors and sales to communicate on abilities and diversities a developer has. Woring in progress.',
     projectImageLink: '/scorecard.gif',
-    projectUrl: 'https://salt-score-card.vercel.app/',
-    projectGithubUrl: 'https://github.com/salt-community/scorecard',
+    projectUrl: 'scorecard-nine.vercel.app',
+    projectGithubUrl: 'https://github.com/Finns841594/scorecard',
     projectTechStacks: ['TypeScript', 'React', 'Next.js', 'NextUI'],
     featuredTechStacks: ['Next.js', 'NextUI'],
   },
