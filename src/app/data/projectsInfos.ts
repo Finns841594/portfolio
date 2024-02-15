@@ -4,6 +4,25 @@ import { ProjectInfo } from '../types/types'
 // should try Cloudinary for CDN
 export const projectsInfos: ProjectInfo[] = [
   {
+    projectTitle: 'Why Midnight Sun',
+    projectDescription:
+      "I was fascinated by the evening sun when I first arrived in Stockholm. It took me a little bit of time to understand why. There are many articles explaining this, but I don't find them very intuitive.So, I built this interactive app to help people like me to understand this phenomenon in an easier and more intuitive way. ",
+    projectImageLink: '/whyMidNightSun.gif',
+    projectUrl: 'https://why-midnight-sun-855h.vercel.app/',
+    projectGithubUrl: 'https://github.com/Finns841594/why_midnight_sun',
+    projectTechStacks: [
+      'Three.js',
+      'R3F',
+      'Drei',
+      'Next.js',
+      'TypeScript',
+      'React-Leaflet',
+      'NextUI',
+      'TailwindCSS',
+    ],
+    featuredTechStacks: ['Three.js', 'R3F', 'Drei', 'Next.js'],
+  },
+  {
     projectTitle: 'Moboga',
     projectDescription:
       "MoboGa is a platform that showcases the interconnectedness between movies, books, and game adaptations of stories for fans. Here, you can delve into alternate dimensions of your favorite stories. For instance, if you're an avid reader and viewer of the Harry Potter series, you may also enjoy exploring the world of Harry Potter video games.",
@@ -65,23 +84,23 @@ export const projectsInfos: ProjectInfo[] = [
     projectTechStacks: ['TypeScript', 'React', 'Next.js', 'NextUI'],
     featuredTechStacks: ['Next.js', 'NextUI'],
   },
-  {
-    projectTitle: 'Milk Shop',
-    projectDescription:
-      'A project to practice React skills. Implemented Redux for managing the states. Backend has full unit-test test set. One of the many practicing project in PGP',
-    projectImageLink:
-      'https://github.com/Finns841594/pgp-five-milk-app/blob/master/public/screenshot%20home.png?raw=true',
-    projectUrl: '',
-    projectGithubUrl: 'https://github.com/Finns841594/pgp-five-milk-app',
-    projectTechStacks: [
-      'TDD',
-      'Redux',
-      'TypeScript',
-      'React',
-      'Next.js',
-      'NextUI',
-      'Node.js',
-    ],
-    featuredTechStacks: ['TDD', 'Redux', 'Node.js'],
-  },
+  // {
+  //   projectTitle: 'Milk Shop',
+  //   projectDescription:
+  //     'A project to practice React skills. Implemented Redux for managing the states. Backend has full unit-test test set. One of the many practicing project in PGP',
+  //   projectImageLink:
+  //     'https://github.com/Finns841594/pgp-five-milk-app/blob/master/public/screenshot%20home.png?raw=true',
+  //   projectUrl: '',
+  //   projectGithubUrl: 'https://github.com/Finns841594/pgp-five-milk-app',
+  //   projectTechStacks: [
+  //     'TDD',
+  //     'Redux',
+  //     'TypeScript',
+  //     'React',
+  //     'Next.js',
+  //     'NextUI',
+  //     'Node.js',
+  //   ],
+  //   featuredTechStacks: ['TDD', 'Redux', 'Node.js'],
+  // },
 ]
