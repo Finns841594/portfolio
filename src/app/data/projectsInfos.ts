@@ -7,7 +7,8 @@ export const projectsInfos: ProjectInfo[] = [
     projectTitle: 'Why Midnight Sun',
     projectDescription:
       "I was fascinated by the evening sun when I first arrived in Stockholm. It took me a little bit of time to understand why. There are many articles explaining this, but I don't find them very intuitive.So, I built this interactive app to help people like me to understand this phenomenon in an easier and more intuitive way. ",
-    projectImageLink: '/whyMidNightSun.gif',
+    projectImageLink:
+      'https://github.com/Finns841594/why_midnight_sun/raw/main/public/whyMidnightSun.gif',
     projectUrl: 'https://why-midnight-sun-855h.vercel.app/',
     projectGithubUrl: 'https://github.com/Finns841594/why_midnight_sun',
     projectTechStacks: [
