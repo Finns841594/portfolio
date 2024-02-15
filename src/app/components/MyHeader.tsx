@@ -28,13 +28,13 @@ export const MyHeader = () => {
           </Button>
         </NavbarItem> */}
         <NavbarItem className="flex">
-          <Link isBlock href="#">
+          <Link isBlock href="https://www.linkedin.com/in/feng-yang-511361166/">
             <LinkedinIcon className="mr-2" />
             Linkedin
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <Link isBlock href="#">
+          <Link isBlock href="https://github.com/Finns841594">
             <GithubIcon className="mr-2" />
             Github
           </Link>
