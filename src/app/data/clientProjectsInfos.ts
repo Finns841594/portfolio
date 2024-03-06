@@ -90,7 +90,7 @@ export const clientProjectsInfos: ProjectInfo[] = [
     projectDescription:
       'Esthers is a platform for influencers to share their ways of living style with fans. \n Our task is giving consulting solutions to improve the perfermance of client app. \n I focused on app perfermance analytics, images and videos optimizations. ',
     projectImageLink: '/esthers.png',
-    projectSubDescription: 'Media optimisations',
+    projectSubDescription: 'Web app performance optimisations',
     clientUrl: 'https://www.esthers.shop/',
     clientProjectInfoLink: '',
     projectTechStacks: [
@@ -103,6 +103,6 @@ export const clientProjectsInfos: ProjectInfo[] = [
       'Goolgle Lighthouse',
       'Cloudinary',
     ],
-    featuredTechStacks: [],
+    featuredTechStacks: ['Next.js'],
   },
 ]
