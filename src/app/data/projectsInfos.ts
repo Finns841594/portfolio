@@ -9,6 +9,7 @@ export const projectsInfos: ProjectInfo[] = [
       "I was fascinated by the evening sun when I first arrived in Stockholm. It took me a little bit of time to understand why. There are many articles explaining this, but I don't find them very intuitive.So, I built this interactive app to help people like me to understand this phenomenon in an easier and more intuitive way. ",
     projectImageLink:
       'https://github.com/Finns841594/why_midnight_sun/raw/main/public/whyMidnightSun.gif',
+    projectSubDescription: 'Interactive illustration of sun moving path',
     projectUrl: 'https://why-midnight-sun-855h.vercel.app/',
     projectGithubUrl: 'https://github.com/Finns841594/why_midnight_sun',
     projectTechStacks: [
@@ -40,6 +41,7 @@ export const projectsInfos: ProjectInfo[] = [
       'We are building a full-stack application designed to match our database of developers with available jobs in Stockohlm. Our job data is provided by the jobtechdev API.',
     projectImageLink:
       'https://github.com/lups-tech/.github/raw/main/jobtech.gif',
+    projectSubDescription: 'Connect talents and positions',
     projectUrl: 'https://job-matches.vercel.app/',
     projectGithubUrl: 'https://github.com/lups-tech',
     projectTechStacks: [
@@ -80,6 +82,7 @@ export const projectsInfos: ProjectInfo[] = [
     projectDescription:
       'A card that helps employers meet perfect developer. Developed for internal use for instructors and sales to communicate on abilities and diversities a developer has. Woring in progress.',
     projectImageLink: '/scorecard.gif',
+    projectSubDescription: 'Shows the diversity and skills',
     projectUrl: 'scorecard-nine.vercel.app',
     projectGithubUrl: 'https://github.com/Finns841594/scorecard',
     projectTechStacks: ['TypeScript', 'React', 'Next.js', 'NextUI'],
